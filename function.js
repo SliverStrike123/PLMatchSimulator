@@ -3,7 +3,7 @@ function getRndInteger(min, max) {
 }
 
 function SimPLMatch(team1,team2,odds1,odds2){
-    console.log(`${team1} vs ${team2}`)
+    
     console.log(`Odds: ${odds1/100} vs ${odds2/100}`)
     const team1nums = [];
     const team2nums = [];
@@ -46,10 +46,10 @@ function SimPLMatch(team1,team2,odds1,odds2){
     }
 
     if(team1win == true){
-        console.log(`Winner is ${team1}`)
+        return team1;
     }
     else{
-        console.log(`Winner is ${team2}`)
+        return team2;
     }
 
 }
