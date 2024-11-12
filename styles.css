@@ -75,7 +75,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #28a745 !important;
 }
 
 .result {
@@ -178,5 +178,63 @@ button:hover {
 }
 
 #popup-close:hover {
-    background-color: #0056b3;
+    background-color: #28a745 !important;
+}
+
+.win-text {
+    color: #28a745 !important;
+}
+
+.lose-text {
+    color: #dc3545 !important;
+}
+
+/* Add these new styles */
+.selection-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.team-select {
+    flex: 1;
+}
+
+.team-select h3 {
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+select:hover {
+    border-color: #007bff;
+}
+
+select:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.2);
+}
+
+.random-button-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#random-match {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
 } 
