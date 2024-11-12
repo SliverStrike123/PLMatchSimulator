@@ -1,8 +1,8 @@
-function getRndInteger(min, max) {
+export function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
 }
 
-function SimPLMatch(team1,team2,odds1,odds2){
+export function SimPLMatch(team1,team2,odds1,odds2){
     
     console.log(`Odds: ${odds1/100} vs ${odds2/100}`)
     const team1nums = [];
@@ -53,5 +53,3 @@ function SimPLMatch(team1,team2,odds1,odds2){
     }
 
 }
-
-module.exports = {SimPLMatch, getRndInteger};

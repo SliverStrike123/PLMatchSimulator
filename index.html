@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Match Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Premier League Match Predictor</h1>
+        
+        <div class="match-container">
+            <div class="team team1">
+                <h2 id="team1-name">Team 1</h2>
+                <div class="odds" id="team1-odds">50%</div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team team2">
+                <h2 id="team2-name">Team 2</h2>
+                <div class="odds" id="team2-odds">50%</div>
+            </div>
+        </div>
+
+        <div class="prediction-container">
+            <h3>Make your prediction</h3>
+            <div class="buttons">
+                <button id="predict-team1">Pick Team 1</button>
+                <button id="predict-team2">Pick Team 2</button>
+            </div>
+        </div>
+
+        <div id="result" class="result hidden">
+            <h3>Result</h3>
+            <p id="winner-text"></p>
+            <p id="prediction-text"></p>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="result-popup">
+        <h2 id="popup-winner-text"></h2>
+        <p id="popup-prediction-text"></p>
+        <button id="popup-close">Play Again</button>
+    </div>
+    <script type="module" src="game.js"></script>
+</body>
+</html> 

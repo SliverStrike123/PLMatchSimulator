@@ -1,2 +1,20 @@
+# Dependencies
 node_modules/
-package*
+
+# Build output
+dist/
+build/
+
+# Parcel cache
+.parcel-cache/
+
+# Environment variables
+.env
+
+# IDE specific files
+.vscode/
+.idea/
+
+# OS specific files
+.DS_Store
+Thumbs.db
