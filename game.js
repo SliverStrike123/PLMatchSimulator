@@ -70,16 +70,22 @@ class GameUI {
         const team1Odds = Math.round((team1Data.odds/totalOdds) * 100);
         const team2Odds = Math.round((team2Data.odds/totalOdds) * 100);
 
-        const winner = SimPLMatch(team1, team2, team1Odds, team2Odds);
+        const result = SimPLMatch(team1, team2, team1Odds, team2Odds);
         
-        // Update popup content
-        this.popupWinnerText.textContent = `${winner} has won the match!`;
-        this.popupPredictionText.textContent = guess === winner 
-            ? "Congratulations on guessing correctly!" 
-            : "Whoops, you guessed incorrectly!";
+        // Update popup content with score
+        this.popupWinnerText.textContent = `${team1} ${result.team1Goals} - ${result.team2Goals} ${team2}`;
         
-        // Set prediction text color
-        this.popupPredictionText.style.color = guess === winner ? '#28a745' : '#dc3545';
+        if (result.winner === 'Draw') {
+            this.popupPredictionText.textContent = guess === team1 || guess === team2
+                ? "It's a draw! Close guess!"
+                : "It's a draw!";
+            this.popupPredictionText.style.color = '#ffc107'; // Yellow for draw
+        } else {
+            this.popupPredictionText.textContent = guess === result.winner
+                ? "Congratulations on guessing correctly!"
+                : "Whoops, you guessed incorrectly!";
+            this.popupPredictionText.style.color = guess === result.winner ? '#28a745' : '#dc3545';
+        }
         
         // Show popup
         this.showPopup();
