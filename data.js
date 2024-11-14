@@ -1,82 +1,82 @@
 export const data = [
     {
-        team: "Manchester City", 
+        team: "Merchestor Siteh", 
         odds: 0.2857
     },
     {
-        team: "Liverpool", 
+        team: "Livarport", 
         odds: 0.2
     },
     {
-        team: "Arsenal", 
+        team: "Arsenorth", 
         odds: 0.125
     },
     {
-        team: "Newcastle", 
+        team: "Newbridge City", 
         odds: 0.125
     },
     {
-        team: "Manchester United", 
+        team: "Manchampton Reds", 
         odds: 0.067
     },
     {
-        team: "Chelsea", 
+        team: "Chelston", 
         odds: 0.053
     },
     {
-        team: "Tottenham Hotspur", 
+        team: "Tottingham Warriors", 
         odds: 0.038
     },
     {
-        team: "Aston Villa", 
+        team: "Eastern Vill", 
         odds: 0.019
     },
     {
-        team: "West Ham", 
+        team: "West Shield", 
         odds: 0.019
     },
     {
-        team: "Brighton", 
+        team: "Brightshore", 
         odds: 0.019
     },
     {
-        team: "Wolves", 
+        team: "YellowWolves", 
         odds: 0.0066
     },
     {
-        team: "Brentford", 
+        team: "Brentshire", 
         odds: 0.0066
     },
     {
-        team: "Crystal Palace", 
+        team: "Crown Palace", 
         odds: 0.005
     },
     {
-        team: "Fulham", 
+        team: "Fullbridge", 
         odds: 0.004
     },
     {
-        team: "Nottingham Forest", 
+        team: "Northern Forest", 
         odds: 0.004
     },
     {
-        team: "Bournemouth", 
+        team: "Blackmouth", 
         odds: 0.003
     },
     {
-        team: "Burnley", 
+        team: "Burnfield", 
         odds: 0.002
     },
     {
-        team: "Sheffield United", 
+        team: "Sheffington United", 
         odds: 0.002
     },
     {
-        team: "Luton Town", 
+        team: "Luxtown City", 
         odds: 0.0016
     },
     {
-        team: "Everton", 
+        team: "Everbrook", 
         odds: 0.001
     }
 ]; 
