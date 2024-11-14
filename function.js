@@ -24,26 +24,25 @@ export function SimPLMatch(team1, team2, odds1, odds2) {
 }
 
 function calculateTeamGoals(teamStrength) {
-    // Poisson-like distribution for realistic soccer scores
     const random = Math.random();
     
     if (teamStrength > 0.25) { // Strong teams
-        if (random < 0.1) return 0;        // 10% chance of 0 goals
-        if (random < 0.3) return 1;        // 20% chance of 1 goal
-        if (random < 0.6) return 2;        // 30% chance of 2 goals
-        if (random < 0.8) return 3;        // 20% chance of 3 goals
-        if (random < 0.9) return 4;        // 10% chance of 4 goals
-        return 5;                          // 10% chance of 5 goals
+        if (random < 0.05 || random > 0.95) return 0;     // 10% chance of 0 goals
+        if (random < 0.25 || random > 0.85) return 1;     // 20% chance of 1 goal
+        if (random < 0.55 && random > 0.25) return 2;     // 30% chance of 2 goals
+        if (random < 0.75 && random > 0.55) return 3;     // 20% chance of 3 goals
+        if (random < 0.85 && random > 0.75) return 4;     // 10% chance of 4 goals
+        return 5;                                         // 10% chance of 5 goals
     } else if (teamStrength > 0.1) { // Medium teams
-        if (random < 0.2) return 0;        // 20% chance of 0 goals
-        if (random < 0.5) return 1;        // 30% chance of 1 goal
-        if (random < 0.8) return 2;        // 30% chance of 2 goals
-        if (random < 0.95) return 3;       // 15% chance of 3 goals
-        return 4;                          // 5% chance of 4 goals
+        if (random < 0.1 || random > 0.9) return 0;       // 20% chance of 0 goals
+        if (random < 0.35 || random > 0.75) return 1;     // 30% chance of 1 goal
+        if (random < 0.75 && random > 0.35) return 2;     // 30% chance of 2 goals
+        if (random < 0.9 && random > 0.75) return 3;      // 15% chance of 3 goals
+        return 4;                                         // 5% chance of 4 goals
     } else { // Weaker teams
-        if (random < 0.3) return 0;        // 30% chance of 0 goals
-        if (random < 0.7) return 1;        // 40% chance of 1 goal
-        if (random < 0.9) return 2;        // 20% chance of 2 goals
-        return 3;                          // 10% chance of 3 goals
+        if (random < 0.15 || random > 0.85) return 0;     // 30% chance of 0 goals
+        if (random < 0.55 || random > 0.75) return 1;     // 40% chance of 1 goal
+        if (random < 0.75 && random > 0.55) return 2;     // 20% chance of 2 goals
+        return 3;                                         // 10% chance of 3 goals
     }
 }
